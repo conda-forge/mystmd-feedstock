@@ -144,4 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@fwkoch](https://github.com/fwkoch/)
+* [@rowanc1](https://github.com/rowanc1/)
 
