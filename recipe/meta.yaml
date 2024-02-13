@@ -18,10 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
+    - hatchling
+    - hatch-nodejs-version
   run:
-    - python >=3.6
+    - python >=3.8
 
 test:
   imports:
