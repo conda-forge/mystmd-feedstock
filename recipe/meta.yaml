@@ -24,6 +24,7 @@ requirements:
     - hatch-nodejs-version
   run:
     - python >=3.8
+    - nodejs >=18
 
 test:
   imports:
@@ -33,7 +34,7 @@ test:
     - myst --help
   requires:
     - pip
-    - nodejs
+    - nodejs >=18
 
 about:
   home: https://github.com/executablebooks/mystmd
