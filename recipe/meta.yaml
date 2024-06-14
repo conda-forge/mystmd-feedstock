@@ -14,7 +14,7 @@ build:
     - myst = mystmd_py.main:main
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
