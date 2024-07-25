@@ -1,5 +1,5 @@
 {% set name = "mystmd" %}
-{% set version = "1.3.0" %}
+{% set version = "1.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mystmd-{{ version }}.tar.gz
-  sha256: ca06d7c8362ed6c74bd3812b051a3dba9ec85a8eb5f295c8c38b1c9ca64dc497
+  sha256: 6a85b76858e231fc708ddea6da49df942134ae9acbbd0bb114b447e788c67439
 
 build:
   entry_points:
