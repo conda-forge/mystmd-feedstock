@@ -24,6 +24,7 @@ requirements:
     - pip
     - hatchling
     - hatch-nodejs-version
+    - hatch-deps-selector
   run:
     - python >=3.8
     - nodejs >=18
