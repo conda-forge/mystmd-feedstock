@@ -13,6 +13,8 @@ build:
   entry_points:
     - myst = mystmd_py.main:main
   noarch: python
+  script_env: 
+    - MYSTMD_PACKAGE_VARIANT=conda-forge
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
 
