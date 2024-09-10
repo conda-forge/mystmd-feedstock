@@ -1,5 +1,5 @@
 {% set name = "mystmd" %}
-{% set version = "1.3.7" %}
+{% set version = "1.3.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mystmd-{{ version }}.tar.gz
-  sha256: 27435421682e83aaaec2305dd25c54400c10cbcf1185bbb546edc7ac524ebdea
+  sha256: 1d6f16e386e2847d51474c891e54d0cca94d628b806b028f1f90c99cf1186b00
 
 build:
   entry_points:
     - myst = mystmd_py.main:main
   noarch: python
-  script_env: 
+  script_env:
     - MYSTMD_PACKAGE_VARIANT=conda-forge
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
