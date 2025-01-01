@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/mystmd-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mystmd-{{ version }}.tar.gz
   sha256: ff60b1ff8bfb6ca3df6bdd275b23925c7fa4467e8ddc84d015367b6e2b7304f3
 
 build:
@@ -16,17 +16,17 @@ build:
   script_env:
     - MYSTMD_PACKAGE_VARIANT=conda-forge
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
     - hatch-nodejs-version
     - hatch-deps-selector
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - nodejs >=18
 
 test:
@@ -38,6 +38,7 @@ test:
   requires:
     - pip
     - nodejs >=18
+    - python {{ python_min }}
 
 about:
   home: https://github.com/executablebooks/mystmd
