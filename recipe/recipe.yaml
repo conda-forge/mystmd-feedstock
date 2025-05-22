@@ -51,7 +51,7 @@ about:
   summary: Command line tools for MyST Markdown
   license: MIT
   license_file: LICENSE
-  homepage: https://github.com/executablebooks/mystmd
+  homepage: https://github.com/jupyter-book/mystmd
 
 extra:
   recipe-maintainers:
