@@ -20,13 +20,13 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - hatchling
     - hatch-nodejs-version
     - hatch-deps-selector
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - nodejs >=18
 
 test:
@@ -37,6 +37,7 @@ test:
     - myst --help
   requires:
     - pip
+    - python {{ python_min }}
     - nodejs >=18
 
 about:
