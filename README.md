@@ -145,5 +145,6 @@ Feedstock Maintainers
 
 * [@agoose77](https://github.com/agoose77/)
 * [@fwkoch](https://github.com/fwkoch/)
+* [@mfisher87](https://github.com/mfisher87/)
 * [@rowanc1](https://github.com/rowanc1/)
 
