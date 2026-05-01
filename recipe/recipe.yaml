@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: mystmd
-  version: "1.8.3"
+  version: "1.9.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/mystmd-${{ version }}.tar.gz
-  sha256: 9b01205643990c00eae0ad84855633d5da9751770c318e919e9b2014d1827d22
+  sha256: bdae4af2966b4e6f20bb8bbb507b3146d340c3ee451ab452cd0982f383588a65
 
 build:
   number: 0
