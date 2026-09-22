@@ -32,7 +32,7 @@ requirements:
     - hatch-deps-selector
   run:
     - python >=${{ python_min }}
-    - nodejs >=18
+    - nodejs >=20
 
 tests:
   - python:
@@ -43,7 +43,7 @@ tests:
   - requirements:
       run:
         - pip
-        - nodejs >=18
+        - nodejs >=20
     script:
       - myst --help
 
