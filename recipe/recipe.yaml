@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: mystmd
-  version: "1.12.0"
+  version: "1.13.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/mystmd-${{ version }}.tar.gz
-  sha256: 783093ef9b0fc78a494bd5bcfbebe3b5e95a534f13259d3ce624b30f8377a5c8
+  sha256: 8dfa76bdf286811483d3a9ce1a7a68b4467c3c48c75864bd5e49da9e3be31fbb
 
 build:
   number: 0
@@ -32,7 +32,7 @@ requirements:
     - hatch-deps-selector
   run:
     - python >=${{ python_min }}
-    - nodejs >=20
+    - nodejs >=22
 
 tests:
   - python:
@@ -43,7 +43,7 @@ tests:
   - requirements:
       run:
         - pip
-        - nodejs >=20
+        - nodejs >=22
     script:
       - myst --help
 
