@@ -189,6 +189,7 @@ Feedstock Maintainers
 
 * [@agoose77](https://github.com/agoose77/)
 * [@bsipocz](https://github.com/bsipocz/)
+* [@choldgraf](https://github.com/choldgraf/)
 * [@fwkoch](https://github.com/fwkoch/)
 * [@mfisher87](https://github.com/mfisher87/)
 * [@rowanc1](https://github.com/rowanc1/)
